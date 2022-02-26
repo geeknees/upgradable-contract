@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers, upgrades } = require("hardhat");
 
-describe("Greeter", function () {
+describe("Greeter1", function () {
   it("Should return greetingV1", async function () {
     const Greeter = await ethers.getContractFactory("GreeterV1");
     const greeter = await upgrades.deployProxy(Greeter, [], {
